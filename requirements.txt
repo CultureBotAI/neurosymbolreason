@@ -1,0 +1,12 @@
+# Core dependencies for analogy reasoning
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scipy>=1.7.0
+
+# Optional dependencies for ultra-fast implementation
+# Uncomment to install:
+# faiss-cpu>=1.7.0  # or faiss-gpu for GPU acceleration
+# annoy>=1.17.0

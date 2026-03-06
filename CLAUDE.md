@@ -18,6 +18,25 @@ The system analyzes relationships across four physical trait types:
 - **pH optimum**: high ↔ low, mid1 ↔ mid2
 - **Temperature optimum**: high ↔ low, mid1 ↔ mid4, mid2 ↔ mid3
 
+## Dependencies
+
+**Installation**:
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn scipy
+```
+
+**For ultra-fast implementation** (optional):
+```bash
+pip install faiss-cpu annoy  # or faiss-gpu for GPU acceleration
+```
+
+**Python version**: Python 3.7+ (tested with 3.10+)
+
 ## Architecture
 
 ### Three Implementations (Performance Tiers)
@@ -74,6 +93,8 @@ reasoner = AnalogyReasoner(
 - **Node filtering**: Results filtered to NCBITaxon:*, strain:*, ph_*, nacl_* nodes only
 
 ## Data Dependencies
+
+**Note**: Data files are not included in this repository (excluded via .gitignore due to size). You must provide your own embedding and trait data files.
 
 The system requires embeddings and trait data files. Paths are relative to `data_dir`:
 
